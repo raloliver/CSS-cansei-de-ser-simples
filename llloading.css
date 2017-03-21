@@ -1,0 +1,89 @@
+body {
+    background: #FFFFFF;
+}
+
+.area {
+    transition: all .3s;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.polygon {
+    border-radius: 5px;
+}
+
+.shape5 {
+    background: #FF223A;
+    width: 116px;
+    height: 69px;
+    position: absolute;
+    z-index: 1;
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.shape4 {
+    background: #FFFFFF;
+    width: 85px;
+    height: 52px;
+    position: absolute;
+    z-index: 2;
+}
+
+.shape3 {
+    background: #FF223A;
+    width: 60px;
+    height: 38px;
+    position: absolute;
+    z-index: 3;
+    animation-name: fade;
+    animation-delay: .7s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.shape2 {
+    background: #FFFFFF;
+    width: 38px;
+    height: 25px;
+    position: absolute;
+    z-index: 4;
+    border-radius: 5px;    
+}
+
+.shape1 {
+    background: #FF223A;
+    width: 19px;
+    height: 12px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 2px;
+    animation-name: fade;
+    animation-delay: .4s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.axisAD {
+    transform: rotateZ(60deg);
+}
+
+.axisFC {
+    transform: rotateZ(-60deg);
+}
+
+@keyframes fade {
+    0% {
+        background-image: #FF223A;
+    }
+    50% {
+        background: #FFFFFF;
+    }
+    100% {
+        background: #FF223A;
+    }
+}
